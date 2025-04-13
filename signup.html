@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tronix POS - Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="John Doe" required>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" placeholder="Enter your email" required>
+        </div>
+        <!-- Password -->
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="signupPassword" placeholder="Create a password" required>
+            <button type="button" class="btn-icon" onclick="togglePassword('signupPassword')">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+          <div class="password-strength" id="passwordStrength"></div>
+        </div>
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+        </div>
+        <!-- Terms of Service -->
+        <div class="form-group">
+          <label>
+            <input type="checkbox" required> I agree to the <a href="#">Terms of Service</a>
+          </label>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <!-- Add this BELOW the submit button in the signup form -->
+          <div class="auth-link">
+           Already have an account? <a href="login.html">Login here</a>
+          </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
